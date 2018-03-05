@@ -1,0 +1,112 @@
+html {
+    max-width: 1080px;
+}
+
+body {
+    font: 1em/1.4em 'Open Sans', sans-serif;
+    color: #CCCCCC;
+    background: black none;
+    margin: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.1em;
+    margin: 1em 0 0.5em 0;
+}
+
+h2 {
+    font-variant: small-caps;
+    padding-bottom: 0.2em;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/* https://css-tricks.com/the-image-replacement-museum/ */
+h1.hidden-text {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+nav {
+    font-size: 1.4em;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0.5em 0 1.2em 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li + li:before {
+    content: " / ";
+    padding: 0.5em;
+    line-height: 1.1em;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure img {
+    margin: 0;
+}
+
+figure figcaption {
+    font-style: oblique;
+    text-align: center;
+}
+
+a, a:link, a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: orange;
+}
+
+footer {
+    margin: 2em 0;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    body {
+        background: black none;
+    }
+
+    .main {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background: black url(img/east-coast.png) left top no-repeat;
+        background-attachment: fixed;
+    }
+
+    main {
+        margin-left: 240px;
+    }
+}
+
+#banner-img {
+    width: 100%;
+    max-width: 649px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.smallprint {
+    font-size: 0.75em;
+}
